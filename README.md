@@ -2,6 +2,12 @@
 
 The `are-you-ready-yet` package is basically a joke on `Promise`.
 
+Sometime you have to use your imagination to figure out what would be useful of this package. 
+
+It might be keep you waiting for an answer, you'll never know!
+
+😂 Good luck!
+
 ### Install
 
 ```sh
@@ -19,9 +25,17 @@ class DoSomething {
     constructor() {
         const { yes, no, maybe } = areYouReadyYet()
         this.maybe = maybe
+        this.yes = yes
+        this.no = no
 
+        // Now setup the instance
+        // Once you are ready!
+        this.setup()
+    }
+
+    async setup() {
         // Fake task to do something that take a very long time
-        setTimeout(() => yes(), 5000)
+        setTimeout(() => this.yes(), 5000)
     }
     
 
@@ -42,3 +56,7 @@ do.doThat() // Promise
 // then wait until the `setTimeout` callback executed 
 // and output "I did it!"
 ```
+
+## License
+
+Licensed under [MIT License](LICENSE)
