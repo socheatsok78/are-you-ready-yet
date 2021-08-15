@@ -1,0 +1,44 @@
+# Are you ready yet?
+
+The `are-you-ready-yet` package is basically a joke on `Promise`.
+
+### Install
+
+```sh
+npm install are-you-ready-yet
+# or
+yarn add are-you-ready-yet
+```
+
+### Usage
+
+```js
+import { areYouReadyYet } from 'are-you-ready-yet'
+
+class DoSomething {
+    constructor() {
+        const { yes, no, maybe } = areYouReadyYet()
+        this.maybe = maybe
+
+        // Fake task to do something that take a very long time
+        setTimeout(() => yes(), 5000)
+    }
+    
+
+    /**
+     * Wait for `maybe` to resolve
+     */
+    async doThat() {
+        console.log("I'll do that after i'm ready!")
+        await this.maybe
+        console.log('I did it!')
+    }
+}
+
+const do = new DoSomething()
+
+do.doThat() // Promise
+// This will output "I'll do that after i'm ready!"
+// then wait until the `setTimeout` callback executed 
+// and output "I did it!"
+```
