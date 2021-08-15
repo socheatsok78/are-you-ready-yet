@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
+    "target": "ESNext",
     "strict": true,
-    "module": "UMD",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "inlineSourceMap": true,
     "declaration": true

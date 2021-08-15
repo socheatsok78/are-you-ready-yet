@@ -5,7 +5,7 @@
   "typings": "index.d.ts",
   "license": "MIT",
   "scripts": {
-    "clean": "rm index.{d.ts,js,js.map}",
+    "clean": "rm index.{d.ts,js}",
     "build": "tsc"
   },
   "dependencies": {
