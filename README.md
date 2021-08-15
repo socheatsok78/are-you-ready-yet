@@ -57,6 +57,8 @@ do.doThat() // Promise
 // and output "I did it!"
 ```
 
+Example of `are-you-ready-yet` used with [`GoogleChromeLabs/comlink`](https://github.com/GoogleChromeLabs/comlink). [Click here.](https://gist.github.com/socheatsok78/7ede85c6f479bb8c0b35c7114a6c3edf)
+
 ## License
 
 Licensed under [MIT License](LICENSE)
