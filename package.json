@@ -1,0 +1,14 @@
+{
+  "name": "are-you-ready-yet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm index.{d.ts,js,js.map}",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}

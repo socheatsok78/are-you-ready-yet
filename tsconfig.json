@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "strict": true,
+    "module": "UMD",
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "declaration": true
+  }
+}
