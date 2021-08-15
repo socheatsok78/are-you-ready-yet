@@ -4,6 +4,11 @@
   "main": "index.js",
   "typings": "index.d.ts",
   "license": "MIT",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "promise"
+  ],
   "scripts": {
     "clean": "rm index.{d.ts,js}",
     "build": "tsc"
