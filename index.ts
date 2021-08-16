@@ -2,7 +2,13 @@ type Maybe = PromiseLike<unknown>
 type Yes = (value: unknown) => void
 type No = (reason?: any) => void
 
-export function areYouReadyYet() {
+interface AreYouReadyYet {
+    maybe: () => Maybe
+    yes: Yes
+    no: No
+}
+
+export function areYouReadyYet(): AreYouReadyYet {
     let resolver!: Yes
     let rejecter!: No
 
@@ -12,7 +18,7 @@ export function areYouReadyYet() {
     })
 
     return {
-        maybe: maybe,
+        maybe: () => maybe,
         yes: resolver,
         no: rejecter,
     }
