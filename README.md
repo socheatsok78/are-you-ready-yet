@@ -23,10 +23,7 @@ import { areYouReadyYet } from 'are-you-ready-yet'
 
 class DoSomething {
     constructor() {
-        const { yes, no, maybe } = areYouReadyYet()
-        this.maybe = maybe
-        this.yes = yes
-        this.no = no
+        this.ready = areYouReadyYet()
 
         // Now setup the instance
         // Once you are ready!
@@ -35,7 +32,10 @@ class DoSomething {
 
     async setup() {
         // Fake task to do something that take a very long time
-        setTimeout(() => this.yes(), 5000)
+        setTimeout(() => this.ready.yes(), 5000)
+
+        // If you want to throw error
+        // this.ready.no(new Error('Your error message'))
     }
     
 
@@ -44,7 +44,7 @@ class DoSomething {
      */
     async doThat() {
         console.log("I'll do that after i'm ready!")
-        await this.maybe
+        await this.ready.maybe()
         console.log('I did it!')
     }
 }
