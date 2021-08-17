@@ -19,7 +19,7 @@
     "clean": "rm index.{d.ts,js}",
     "build": "tsc"
   },
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^4.3.5"
   }
 }
