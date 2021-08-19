@@ -1,12 +1,13 @@
 # Are you ready yet?
 
+[![npm-badge][npm-badge]][npm-url]
+
 The `are-you-ready-yet` package is basically a joke on `Promise`.
 
-Sometime you have to use your imagination to figure out what would be useful of this package. 
-
+Sometime you have to use your imagination to figure out what would be useful of this package.  
 It might be keep you waiting for an answer, you'll never know!
 
-😂 Good luck!
+😂 &nbsp;Good luck!
 
 ### Install
 
@@ -62,3 +63,7 @@ Example of `are-you-ready-yet` used with [`GoogleChromeLabs/comlink`](https://gi
 ## License
 
 Licensed under [MIT License](LICENSE)
+
+<!-- Variables -->
+[npm-badge]: https://img.shields.io/npm/dm/are-you-ready-yet
+[npm-url]: https://npmjs.com/are-you-ready-yet
