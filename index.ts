@@ -1,5 +1,5 @@
 type Maybe = PromiseLike<unknown>
-type Yes = (value: unknown) => void
+type Yes = (value?: unknown) => void
 type No = (reason?: any) => void
 
 interface AreYouReadyYet {
