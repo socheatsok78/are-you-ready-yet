@@ -1,8 +1,8 @@
-type Maybe = PromiseLike<unknown>
-type Yes = (value?: unknown) => void
-type No = (reason?: any) => void
+export type Maybe = PromiseLike<unknown>
+export type Yes = (value?: unknown) => void
+export type No = (reason?: any) => void
 
-interface AreYouReadyYet {
+export interface AreYouReadyYet {
     maybe: () => Maybe
     yes: Yes
     no: No
